@@ -1,1 +1,12 @@
-test
+{
+  "name": "tj-test",
+  "description": "Runs TJ checks for demo",
+  "version": "1.0.0",
+  "transport": {
+    "type": "http",
+    "url": "https://tj.tj.com/mcp"
+  },
+  "categories": [  "tajinder","singh","devsecops"],
+  "author": "tj",
+  "env": []
+}
