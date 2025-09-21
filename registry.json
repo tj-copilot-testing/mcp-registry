@@ -4,7 +4,7 @@
       "id": "github",
       "name": "GitHub MCP Server",
       "description": "Tools and resources for GitHub repos, issues, PRs, and Actions.",
-      "manifest_url": "https://registry.yourcompany.com/servers/github/manifest.json",
+      "manifest_url": "https://your-org.github.io/mcp-private-registry/servers/github/manifest.json",
       "categories": ["code", "devops", "github"],
       "version": "1.0.0",
       "release_date": "2025-09-01T00:00:00Z",
