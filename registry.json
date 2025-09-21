@@ -1,21 +1,20 @@
 {
   "servers": [
     {
-      "id": "github",
-      "name": "GitHub MCP Server",
-      "description": "Tools and resources for GitHub repos, issues, PRs, and Actions.",
-      "manifest_url": "https://your-org.github.io/mcp-private-registry/servers/github/manifest.json",
-      "categories": ["code", "devops", "github"],
-      "version": "1.0.0",
-      "release_date": "2025-09-01T00:00:00Z",
-      "latest": true
-    },
-    {
       "id": "local-linter",
       "name": "Local Linter",
       "description": "Runs lint checks against local files",
-      "manifest_url": "file:///path/to/local/manifest.json",
+      "manifest_url": "https://tj-copilot-testing.github.io/mcp-private-registry/servers/local-linter/manifest.json",
       "categories": ["linting", "local", "devtools"],
+      "version": "1.0.0",
+      "release_date": "2025-09-01T00:00:00Z",
+      "latest": true
+    }, {
+      "id": "tj-test",
+      "name": "TJ MCP",
+      "description": "Runs TJ checks for demo",
+      "manifest_url": "https://tj-copilot-testing.github.io/mcp-private-registry/servers/tj/manifest.json",
+      "categories": ["tajinder", "singh", "devsecops"],
       "version": "1.0.0",
       "release_date": "2025-09-01T00:00:00Z",
       "latest": true
