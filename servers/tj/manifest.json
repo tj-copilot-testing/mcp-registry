@@ -1,12 +1,21 @@
 {
+  "mcpb_version": "0.1",
   "name": "tj-test",
-  "description": "Runs TJ checks for demo",
+  "display_name": "TJ MCP",
   "version": "1.0.0",
-  "transport": {
-    "type": "http",
-    "url": "https://tj.tj.com/mcp"
+  "description": "Runs TJ checks for demo",
+  "author": {
+    "name": "tj"
   },
-  "categories": [  "tajinder","singh","devsecops"],
-  "author": "tj",
-  "env": []
+  "server": {
+    "type": "http",
+    "entry_point": "https://tj.tj.com/mcp",
+    "mcp_config": {
+      "url": "https://tj.tj.com/mcp"
+    }
+  },
+  "user_config": {},
+  "metadata": {
+    "categories": ["tajinder", "singh", "devsecops"]
+  }
 }
