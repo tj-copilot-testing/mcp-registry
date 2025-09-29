@@ -1,12 +1,28 @@
 {
+  "mcpb_version": "0.1",
   "name": "local-linter",
-  "description": "Runs lint checks against local files",
+  "display_name": "Local Linter",
   "version": "1.0.0",
-  "transport": {
-    "type": "http",
-    "url": "https://linter.mycompany.com/mcp"
+  "description": "Runs lint checks against local files",
+  "author": {
+    "name": "tj-copilot-testing"
   },
-  "categories": ["linting", "devtools"],
-  "author": "MyCompany",
-  "env": []
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"]
+    }
+  },
+  "user_config": {
+    "allowed_directories": {
+      "type": "directory",
+      "title": "Allowed directories",
+      "description": "Directories the server is allowed to read/write",
+      "multiple": true,
+      "required": true,
+      "default": ["${HOME}"]
+    }
+  }
 }
